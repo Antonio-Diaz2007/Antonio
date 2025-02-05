@@ -1,0 +1,350 @@
+/* Reset básico */
+* { /* Utilizo esta expresion regular que he visto informandome en internet, para aplicar a toda la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #006400;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.descripcion h2 {
+    color: #006400;
+    margin-bottom: 1rem;
+}
+
+.galeria {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria .imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.galeria p {font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+div{background-color: aliceblue;
+padding: 4px;
+border-color: black;}
+
+div img {background-color: aliceblue;
+    padding: 10px;
+    border-color: black;
+height: 300px;
+width: 300px;}
+
+button{
+    display: inline-block; /* Permite usar centrado por text-align */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+div h1{
+    color: #0077cc;
+}
+button:hover {
+    background: #005fa3;
+}
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+}
+/* Contenedor principal */
+.contenedor {
+    width: 100%;
+    overflow: hidden; /* Asegura que los floats se limpien correctamente */
+  }
+  
+  /* Estilo para cada caja */
+  .caja {
+    width: 48%; /* Ancho para dividir en dos columnas con espacio */
+    margin: 1%; /* Márgenes pequeños para espacio entre filas y columnas */
+    float: left; /* Hace que se alineen en filas de 2 */
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño */
+    text-align: center; /* Centra el contenido dentro del div */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  marquee {font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Creo este apartado de CSS con class para darle formato a las imagenes y videos */
+
+
+
+/* Reset básico */
+
+/* Estilos generales */
+.bodyIMG {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+.headerIMG {
+    background-color: #006400;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.headerIMG h1 {
+    margin-bottom: 0.5rem;
+}
+
+.navIMG ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navIMG ul li {
+    margin: 0 1rem;
+}
+
+.navIMG ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navIMG ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.mainIMG {
+    padding: 2rem;
+    text-align: center;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.descripcionIMG h2 {
+    color: #006400;
+    margin-bottom: 1rem;
+}
+
+/* Galería de imágenes */
+.galeriaIMG {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeriaIMG .videosIMG {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.galeriaIMG .imagenesIMG {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cajaIMG {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cajaIMG img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción natural */
+    object-fit: cover; /* Evita deformaciones si hay restricciones */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cajaIMG video {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción natural */
+    object-fit: cover; /* Evita deformaciones si hay restricciones */
+    border-radius: 8px;
+}
+
+.cajaIMG img:hover {
+    transform: scale(1.05);
+}
+
+.cajaIMG h1 {
+    color: #0077cc;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.cajaIMG p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.buttonIMG {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttonIMG:hover {
+    background-color: #005fa3;
+}
+
+/* Marquee */
+.marqueeIMG {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footerIMG {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

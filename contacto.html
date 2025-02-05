@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción - Ciclismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ciclismo en la Serena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <marquee>🚴‍♀️🚴‍♂️🚴‍♀️</marquee>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h2><i>Formulario de Inscripción - Ciclismo</i></h2>
+        <form action="#" method="post">
+            <!-- Nombre -->
+            <div class="agrupacion-formulario">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="agrupacion-formulario">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="agrupacion-formulario">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required>
+            </div>
+
+            <!-- Tipo de Actividad -->
+            <div class="agrupacion-formulario">
+                <label for="actividad">Tipo de Actividad:</label>
+                <select id="actividad" name="actividad" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="montana">Ciclismo de Montaña</option>
+                    <option value="carretera">Ciclismo de Carretera</option>
+                </select>
+            </div>
+
+            <!-- Comentarios -->
+            <div class="agrupacion-formulario">
+                <label for="comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ingresa cualquier comentario adicional"></textarea>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit">Enviar Inscripción</button>
+        </form>
+    </div>
+</body>
+</html>
